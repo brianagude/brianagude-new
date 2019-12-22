@@ -1,8 +1,6 @@
 // Gulp.js configuration
 // https://www.sitepoint.com/introduction-gulp-js/
 
-// need to add browsersync & del & type
-
 // development mode?
 const devBuild = (process.env.NODE_ENV !== 'production');
 
@@ -37,6 +35,12 @@ const
   mqpacker = require('css-mqpacker'),
   cssnano = require('cssnano');
 
+// delete function
+  // gulp.task('clean', function () {
+  //   return del(src + '/*')
+  //     .pipe(gulp.dest(build));
+  // });
+
   // image processing
   function images() {
     const out = build + 'images/';
@@ -53,7 +57,7 @@ const
     return gulp.src(src + 'fonts/')
       .pipe(gulp.dest(build));
   }
-
+  
   // HTML processing
   function html() {
     return gulp.src(src + '/*.html')
