@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Porpora';
+  src: font-url('/fonts/porpora-regular.woff2') format('woff2'),
+        font-url('/fonts/porpora-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basier Square Mono';
+  src: font-url('/fonts/basiersquaremono-regular.woff2') format('woff2'),
+      font-url('/fonts/basiersquaremono-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Necto Mono';
+  src: font-url('/fonts/nectomono-regular.woff2') format('woff2'),
+      font-url('/fonts/nectomono-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apfel Grotezk';
+  src: font-url('/fonts/apfelgrotezk-regular.woff2') format('woff2'),
+      font-url('/fonts/apfelgrotezk-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apfel Grotezk Brukt';
+  src: font-url('/fonts/apfelgrotezk-regularBrukt.woff2') format('woff2'),
+      font-url('/fonts/apfelgrotezk-regularBrukt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miratrix Normal';
+  src: font-url('/fonts/miratrix-normal.woff2') format('woff2'),
+    font-url('/fonts/miratrix-normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-primary: 'Porpora', "system", "serif";
+

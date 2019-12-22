@@ -113,7 +113,7 @@ const
     gulp.watch(src + 'images/**', images).on("change", browserSync.reload);
 
     // html changes
-    gulp.watch(src + '/*.html', html).on("change", browserSync.reload);
+    gulp.watch(src + '/**.html', html).on("change", browserSync.reload);
 
     // css changes
     gulp.watch(src + 'css/**', css).on("change", browserSync.reload);

@@ -1,0 +1,85 @@
+// body { background: pink; }
+.container {
+  @include px(16px);
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  @include border;
+  position: fixed; 
+  pointer-events: none;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.intro {
+  width: 100vw;
+
+  .container {
+    min-height: 66vh;
+    @include center(column);
+  }
+}
+
+.projects {
+  width: 100vw;
+  height: 100%;
+  @include border-x;
+
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr;
+    // grid-template-rows: 1fr;
+    grid-gap: 12px;
+
+    @include breakpoint (sm){
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr min-content;
+    }
+  }
+
+  .project {
+    display: flex;
+    
+    &>*{
+      flex: 1;
+    }
+
+    .desc {
+      @include p(8px);
+    }
+  }
+}
+
+.horiz {
+  grid-column: span 2;
+  flex-direction: row;
+}
+
+.vert {
+  grid-row-end: span 2;
+  flex-direction: column;
+}
+
+.contact {
+  width: 100vw;
+  height: 100%;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  // padding: 16px;
+  .container {
+    @include center;
+    @include p(32px);
+  }
+}

@@ -1,0 +1,16 @@
+
+@mixin border {
+  border: 12px $black solid;
+}
+
+@mixin border-x {
+  border-top: 4px $black solid;
+  border-bottom: 4px $black solid;
+}
+
+@mixin center($direction:row) {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: $direction;
+}

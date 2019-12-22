@@ -1,0 +1,96 @@
+//  breakpoints
+@mixin breakpoint($class) {
+  @if $class == mobile-only {
+    @media (max-width: 424px) { @content; }
+  }
+  
+  @else if $class == small-only {
+    @media (max-width: 374px) { @content; }
+  }
+
+  @else if $class == tablet-only {
+    @media (min-width: 426px) and (max-width: 768px) { @content; }
+  }
+
+  @else if $class == xs {
+    @media (min-width: 425px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 1024px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1440px) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: 2560px) { @content; }
+  }
+}
+
+// margin
+@mixin m($value) {
+  margin: $value;
+}
+
+@mixin my($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin mt($value) {
+  margin-top: $value;
+}
+
+@mixin mb($value) {
+  margin-bottom: $value;
+}
+
+@mixin mx($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+@mixin mr($value) {
+  margin-right: $value;
+}
+
+@mixin ml($value) {
+  margin-left: $value;
+}
+
+// padding
+@mixin p($value) {
+  padding: $value;
+}
+
+@mixin py($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin pt($value) {
+  padding-top: $value;
+}
+
+@mixin pb($value) {
+  padding-bottom: $value;
+}
+
+@mixin px($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin pr($value) {
+  padding-right: $value;
+}
+
+@mixin pl($value) {
+  padding-left: $value;
+}
